@@ -1,0 +1,190 @@
+
+/* components/Navbar.module.css */
+.navbar {
+  background-color: #ff6347;
+  padding: 15px;
+  text-align: center;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navList li {
+  font-size: 1.2rem;
+}
+
+.navList li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navList li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .navList {
+    flex-direction: column;
+  }
+}
+/* styles/Home.module.css */
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding-bottom: 20px;
+}
+
+.header {
+  background-color: #ff6347;
+  padding: 20px;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+/* styles/Menu.module.css */
+.menuContainer {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.pizzaList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.pizzaItem {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pizzaItem h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.pizzaItem p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.pizzaImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .pizzaList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .pizzaList {
+    grid-template-columns: 1fr;
+  }
+}
+/* styles/About.module.css */
+.aboutContainer {
+  background-color: #f7f7f7;
+  padding: 40px;
+  text-align: center;
+}
+
+.aboutContainer h1 {
+  font-size: 2rem;
+}
+
+.aboutContainer p {
+  font-size: 1.2rem;
+  color: #555;
+}
+/* styles/Contact.module.css */
+.contactContainer {
+  background-color: #fafafa;
+  padding: 40px;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+/* styles/Home.module.css */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer .socialMediaLinks a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer .socialMediaLinks a:hover {
+  text-decoration: underline;
+}
+
+/* Ensuring the footer sticks to the bottom if content is less */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.main-content {
+  min-height: calc(100vh - 60px); /* Adjust this value based on your header's height */
+  padding-bottom: 40px; /* Space for footer */
+}
+
